@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjog Bhandari</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #000000, #87CEEB); /* Black to Sky Blue */
+            color: #fff;
+            overflow-x: hidden;
+            scroll-behavior: smooth; /* Enable smooth scrolling */
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9); /* White with slight transparency */
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 48px;
+            font-weight: bold;
+            animation: colorChange 5s infinite; /* Color animation */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes colorChange {
+            0% { color: #000000; } /* Black */
+            25% { color: #001f3f; } /* Navy Blue */
+            50% { color: #ff69b4; } /* Pink */
+            75% { color: #00ff00; } /* Sparkle Green */
+            100% { color: #000000; } /* Black */
+        }
+
+        .photo {
+            width: 200px;
+            height: 250px;
+            border-radius: 50%;
+            margin: 0 auto;
+            overflow: hidden;
+            border: 5px solid #87CEEB; /* Sky Blue */
+            margin-bottom: 20px;
+        }
+
+        .photo img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Navigation Links */
+        .nav-links {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .nav-links a {
+            color: #87CEEB; /* Sky Blue */
+            font-size: 20px;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffffff; /* White */
+        }
+
+        /* Section Styles */
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: #87CEEB; /* Sky Blue */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s, transform 0.5s;
+        }
+
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .section:hover {
+            transform: scale(1.05);
+        }
+
+        .section h2 {
+            font-size: 32px;
+            font-weight: bold;
+            color: #000000; /* Black */
+            border-bottom: 3px solid #87CEEB; /* Sky Blue */
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .section p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #000000; /* Black */
+        }
+
+        /* Skills Styles */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills li {
+            font-size: 18px;
+            background-color: #87CEEB; /* Sky Blue */
+            color: #000000; /* Black */
+            margin: 10px;
+            padding: 10px 15px;
+            border-radius: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .skills li:hover {
+            background-color: #000000; /* Black */
+            color: #87CEEB; /* Sky Blue */
+            transform: translateY(-5px);
+        }
+
+        /* Contact Info Styles */
+        .contact-info {
+            text-align: center;
+            padding: 20px;
+            background-color: #000000; /* Black */
+            color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+        }
+
+        .contact-info:hover {
+            background-color: #87CEEB; /* Sky Blue */
+            color: #000000; /* Black */
+        }
+
+        .contact-info p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .header h1 {
+                font-size: 36px;
+            }
+
+            .section h2 {
+                font-size: 28px;
+            }
+
+            .skills li {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Links -->
+        <div class="nav-links">
+            <a href="#about">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <!-- Header Section -->
+        <div class="header">
+            <div class="photo">
+                <img src="123.jpg" alt="Your Photo">
+            </div>
+            <h1>Sanjog Bhandari</h1>
+        </div>
+
+        <!-- About Me Section -->
+        <div id="about" class="section">
+            <h2>About Me</h2>
+            <p>Hello! I'm a passionate individual currently pursuing a Bachelor's degree in MIT with a focus on Cybersecurity. I have a keen interest in technology and enjoy working on various multimedia projects. My goal is to leverage my skills and knowledge to contribute to the field of cybersecurity and make a positive impact.</p>
+        </div>
+
+        <!-- Education Section -->
+        <div id="education" class="section">
+            <h2>Education</h2>
+            <p>Completed my study upto 10 class from Horizon Gautam Buddha</p>
+            <p>Graduated +2 from Kathmandu Model College</p>
+            <p>Currently pursuing a Bachelor's degree in MIT with the aim of graduating in Cybersecurity.</p>
+        </div>
+
+        <!-- Skills Section -->
+        <div id="skills" class="section">
+            <h2>Skills</h2>
+            <ul class="skills">
+                <li>Video Editing</li>
+                <li>Photo Editing</li>
+                <li>Public Speaking</li>
+            </ul>
+        </div>
+
+        <!-- Contact Information -->
+        <div id="contact" class="contact-info">
+            <p><strong>Email:</strong> bhandarisanjog8@gmail.com</p>
+            <p><strong>Phone:</strong> 9745911170</p>
+            <p>Feel free to reach out if you want to discuss any opportunities!</p>
+        </div>
+    </div>
+
+    <script>
+        // Function to detect when sections come into view
+        function onScroll() {
+            const sections = document.querySelectorAll('.section');
+            const windowHeight = window.innerHeight;
+
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                if (sectionTop < windowHeight * 0.9) {
+                    section.classList.add('visible');
+                }
+            });
+        }
+
+        // Initial check
+        onScroll();
+
+        // Add scroll event listener
+        window.addEventListener('scroll', onScroll);
+    </script>
+</body>
+</html>
